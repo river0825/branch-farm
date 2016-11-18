@@ -11,16 +11,6 @@ end
 
 local branch = string.sub(hook.ref, 12)
 
---local pwd = ""
---local tmp = os.tmpname()
---os.execute ("pwd > " .. tmp)
---for line in io.lines (tmp) do
---	pwd = line
---end
---os.remove(tmp)
---ngx.log(ngx.INFO, pwd)
---os.execute("./scripts/nginx_shell_script.sh pull " .. branch)
-
 local lib = require "itp_lib"
 
 lib.git_pull(branch)
