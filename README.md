@@ -9,6 +9,7 @@ nginx 用 rewrite 的方式將 request 導至指定的 docker port
 ## Prerequest
 
 [OpenResty](https://openresty.org/en/) is required 
+
 support git repository only
 
 ## Usage
